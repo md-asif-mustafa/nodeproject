@@ -26,6 +26,28 @@ This is a simple Node.js application that runs inside a Docker container.
     - Go to `http://localhost:3000` if running locally.
     - Go to `http://your-ec2-public-dns:3000` if running on AWS EC2.
 
+### commands 
+
+ To run without docker compose use
+
+  $ docker build -t nodeproject-web .
+
+  $ docker run -p 3000:3000 nodeproject-web
+
+ To run with docker compose
+   
+   $ docker compose up
+
+General docker commands
+   docker images               # to list images
+   docker ps -a                # to list containers
+   docker stop <container id>  # to stop running container 
+   docker rm <container id>    # to delete containers
+   docker rmi <image name>     # to delete docker images
+
+
+
+
 ### Files
 
 - `app.js`: The main Node.js application file.
@@ -37,3 +59,5 @@ This is a simple Node.js application that runs inside a Docker container.
 - [Node.js](https://nodejs.org/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
+
+C
