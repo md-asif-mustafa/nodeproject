@@ -58,12 +58,8 @@ This is a simple Node.js application that runs inside a Docker container.
 - `docker system prune -a`  
   To delete all images and containers
 
-## Running a Docker Container in the Background
-
 - `docker run -d <image name>`  
   To run a Docker container in the background (detached mode)
-
-## Tagging a Docker Image
 
 - `docker tag <existing-image-id> <new-repository-name>:<tag>`  
   To tag an existing Docker image
