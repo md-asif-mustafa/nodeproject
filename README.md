@@ -38,12 +38,26 @@ This is a simple Node.js application that runs inside a Docker container.
    
    $ docker compose up
 
-General docker commands
-   docker images               / to list images
-   docker ps -a                / to list containers
-   docker stop <container id>  / to stop running container 
-   docker rm <container id>    / to delete containers
-   docker rmi <image name>     / to delete docker images
+## General Docker Commands
+
+- `docker images`  
+  To list images
+
+- `docker ps -a`  
+  To list containers
+
+- `docker stop <container id>`  
+  To stop a running container
+
+- `docker rm <container id>`  
+  To delete containers
+
+- `docker rmi <image name>`  
+  To delete Docker images
+
+- `docker system prune -a`  
+  To delete all images and containers
+
 
 
 
